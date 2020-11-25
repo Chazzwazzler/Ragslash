@@ -9,6 +9,9 @@ public class builder : MonoBehaviour
     public GameObject chosenObject;
 
     //settings
+    public ColorPicker picker;
+
+
     public float gravityScale = 1;
     public float massScale = 1;
     public bool hasCollision = true;
@@ -36,6 +39,9 @@ public class builder : MonoBehaviour
                         else if(child.childCount > 0){
                             foreach (Transform child2 in child)
                             {
+                                if(child2.gameObject.GetComponent<Rigidbody2D>() != null){
+
+                                }
                                 child2.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
                             }
                         }
@@ -55,7 +61,9 @@ public class builder : MonoBehaviour
                         else if(child.childCount > 0){
                             foreach (Transform child2 in child)
                             {
-                                child2.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
+                                if(child2.gameObject.GetComponent<Rigidbody2D>()){
+                                    child2.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
+                                }
                             }
                         }
                     }
@@ -69,12 +77,14 @@ public class builder : MonoBehaviour
                     foreach (Transform child in placedObject.transform)
                     {
                         if(child.gameObject.GetComponent<Collider2D>() != null){
-                            placedObject.GetComponent<Collider2D>().isTrigger = true;
+                            child.gameObject.GetComponent<Collider2D>().isTrigger = true;
                         }
                         else if(child.childCount > 0){
                             foreach (Transform child2 in child)
                             {
-                                placedObject.GetComponent<Collider2D>().isTrigger = true;
+                                if(child2.gameObject.GetComponent<Collider2D>() != null){
+                                    child2.gameObject.GetComponent<Collider2D>().isTrigger = true;
+                                }
                             }
                         }
                     }
@@ -97,7 +107,28 @@ public class builder : MonoBehaviour
             if(alignPosition == true){
                 placedObject.transform.position = new Vector3(Mathf.Round(placedObject.transform.position.x),Mathf.Round(placedObject.transform.position.y), 0);
             }
+            if(placedObject.GetComponent<SpriteRenderer>() != null){
+                Color placedObjectColor = picker.CurrentColor;
 
+                if(placedObject.transform.childCount > 0){
+                    foreach (Transform child in placedObject.transform)
+                    {
+                        if(child.gameObject.GetComponent<SpriteRenderer>() != null){
+                            child.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                        }
+                        else if(child.childCount > 0){
+                            foreach (Transform child2 in child)
+                            {
+                                if(child2.gameObject.GetComponent<SpriteRenderer>() != null){
+                                    child2.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                placedObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+            }
         }
 
         if(Input.GetMouseButton(1) && objectUnderMouse != null && objectUnderMouse.tag != "Invincible"){
