@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class builder : MonoBehaviour
 {
+    public toolBar toolBar;
     public GameObject chosenObject;
 
     //settings
@@ -23,120 +24,122 @@ public class builder : MonoBehaviour
     public bool alignPosition = false;
 
     void Update() {
-        GameObject objectUnderMouse = CheckForObjectUnderMouse();
-        if(Input.GetMouseButton(0) && objectUnderMouse == null && EventSystem.current.IsPointerOverGameObject() == false){
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            GameObject placedObject = (GameObject)Instantiate(chosenObject, mousePos, Quaternion.identity);
-            
-            //settings - gravity
-            if(placedObject.GetComponent<Rigidbody2D>() != null){
-                if(placedObject.transform.childCount > 0){
-                    foreach (Transform child in placedObject.transform)
-                    {
-                        if(child.gameObject.GetComponent<Rigidbody2D>() != null){
-                            child.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
-                        }
-                        else if(child.childCount > 0){
-                            foreach (Transform child2 in child)
-                            {
-                                if(child2.gameObject.GetComponent<Rigidbody2D>() != null){
-
-                                }
-                                child2.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
+        if(toolBar.currentToolSelected == toolBar.toolSelected.buildTool){
+            GameObject objectUnderMouse = CheckForObjectUnderMouse();
+            if(Input.GetMouseButton(0) && objectUnderMouse == null && EventSystem.current.IsPointerOverGameObject() == false){
+                Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                GameObject placedObject = (GameObject)Instantiate(chosenObject, mousePos, Quaternion.identity);
+                
+                //settings - gravity
+                if(placedObject.GetComponent<Rigidbody2D>() != null){
+                    if(placedObject.transform.childCount > 0){
+                        foreach (Transform child in placedObject.transform)
+                        {
+                            if(child.gameObject.GetComponent<Rigidbody2D>() != null){
+                                child.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
                             }
-                        }
-                    }
-                }
-                placedObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
-            }
+                            else if(child.childCount > 0){
+                                foreach (Transform child2 in child)
+                                {
+                                    if(child2.gameObject.GetComponent<Rigidbody2D>() != null){
 
-            //settings - mass
-            if(placedObject.GetComponent<Rigidbody2D>() != null){
-                if(placedObject.transform.childCount > 0){
-                    foreach (Transform child in placedObject.transform)
-                    {
-                        if(child.gameObject.GetComponent<Rigidbody2D>() != null){
-                            child.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
-                        }
-                        else if(child.childCount > 0){
-                            foreach (Transform child2 in child)
-                            {
-                                if(child2.gameObject.GetComponent<Rigidbody2D>()){
-                                    child2.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
+                                    }
+                                    child2.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
                                 }
                             }
                         }
                     }
+                    placedObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
                 }
-                placedObject.GetComponent<Rigidbody2D>().mass = massScale;
-            }
 
-            //settings - collision
-            if(placedObject.GetComponent<Collider2D>() != null && hasCollision == false){
-                if(placedObject.transform.childCount > 0){
-                    foreach (Transform child in placedObject.transform)
-                    {
-                        if(child.gameObject.GetComponent<Collider2D>() != null){
-                            child.gameObject.GetComponent<Collider2D>().isTrigger = true;
-                        }
-                        else if(child.childCount > 0){
-                            foreach (Transform child2 in child)
-                            {
-                                if(child2.gameObject.GetComponent<Collider2D>() != null){
-                                    child2.gameObject.GetComponent<Collider2D>().isTrigger = true;
+                //settings - mass
+                if(placedObject.GetComponent<Rigidbody2D>() != null){
+                    if(placedObject.transform.childCount > 0){
+                        foreach (Transform child in placedObject.transform)
+                        {
+                            if(child.gameObject.GetComponent<Rigidbody2D>() != null){
+                                child.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
+                            }
+                            else if(child.childCount > 0){
+                                foreach (Transform child2 in child)
+                                {
+                                    if(child2.gameObject.GetComponent<Rigidbody2D>()){
+                                        child2.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
+                                    }
                                 }
                             }
                         }
                     }
+                    placedObject.GetComponent<Rigidbody2D>().mass = massScale;
                 }
-                placedObject.GetComponent<Collider2D>().isTrigger = true;
-            }
 
-            //settings - scale
-            placedObject.transform.localScale = new Vector3(xScale,yScale,0);
-
-            //settings - rotation
-            placedObject.transform.eulerAngles = new Vector3(0,0,rotationAmount);
-
-            //setings - lock position
-            if(lockPosition == true && placedObject.GetComponent<Rigidbody2D>() != null){
-                Destroy(placedObject.GetComponent<Rigidbody2D>());
-            }
-
-            //settings - align position
-            if(alignPosition == true){
-                placedObject.transform.position = new Vector3(Mathf.Round(placedObject.transform.position.x),Mathf.Round(placedObject.transform.position.y), 0);
-            }
-            if(placedObject.GetComponent<SpriteRenderer>() != null){
-                Color placedObjectColor = picker.CurrentColor;
-
-                if(placedObject.transform.childCount > 0){
-                    foreach (Transform child in placedObject.transform)
-                    {
-                        if(child.gameObject.GetComponent<SpriteRenderer>() != null){
-                            child.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
-                        }
-                        else if(child.childCount > 0){
-                            foreach (Transform child2 in child)
-                            {
-                                if(child2.gameObject.GetComponent<SpriteRenderer>() != null){
-                                    child2.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                //settings - collision
+                if(placedObject.GetComponent<Collider2D>() != null && hasCollision == false){
+                    if(placedObject.transform.childCount > 0){
+                        foreach (Transform child in placedObject.transform)
+                        {
+                            if(child.gameObject.GetComponent<Collider2D>() != null){
+                                child.gameObject.GetComponent<Collider2D>().isTrigger = true;
+                            }
+                            else if(child.childCount > 0){
+                                foreach (Transform child2 in child)
+                                {
+                                    if(child2.gameObject.GetComponent<Collider2D>() != null){
+                                        child2.gameObject.GetComponent<Collider2D>().isTrigger = true;
+                                    }
                                 }
                             }
                         }
                     }
+                    placedObject.GetComponent<Collider2D>().isTrigger = true;
                 }
 
-                placedObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
-            }
-        }
+                //settings - scale
+                placedObject.transform.localScale = new Vector3(xScale,yScale,0);
 
-        if(Input.GetMouseButton(1) && objectUnderMouse != null && objectUnderMouse.tag != "Invincible"){
-            if(objectUnderMouse.transform.root != null){
-                Destroy(objectUnderMouse.transform.root.gameObject);
+                //settings - rotation
+                placedObject.transform.eulerAngles = new Vector3(0,0,rotationAmount);
+
+                //setings - lock position
+                if(lockPosition == true && placedObject.GetComponent<Rigidbody2D>() != null){
+                    Destroy(placedObject.GetComponent<Rigidbody2D>());
+                }
+
+                //settings - align position
+                if(alignPosition == true){
+                    placedObject.transform.position = new Vector3(Mathf.Round(placedObject.transform.position.x),Mathf.Round(placedObject.transform.position.y), 0);
+                }
+                if(placedObject.GetComponent<SpriteRenderer>() != null){
+                    Color placedObjectColor = picker.CurrentColor;
+
+                    if(placedObject.transform.childCount > 0){
+                        foreach (Transform child in placedObject.transform)
+                        {
+                            if(child.gameObject.GetComponent<SpriteRenderer>() != null){
+                                child.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                            }
+                            else if(child.childCount > 0){
+                                foreach (Transform child2 in child)
+                                {
+                                    if(child2.gameObject.GetComponent<SpriteRenderer>() != null){
+                                        child2.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    placedObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
+                }
             }
-            else{
-                Destroy(objectUnderMouse);
+
+            if(Input.GetMouseButton(1) && objectUnderMouse != null && objectUnderMouse.tag != "Invincible"){
+                if(objectUnderMouse.transform.root != null){
+                    Destroy(objectUnderMouse.transform.root.gameObject);
+                }
+                else{
+                    Destroy(objectUnderMouse);
+                }
             }
         }
     }

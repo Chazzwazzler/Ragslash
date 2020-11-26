@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2351136420242994418}
   - component: {fileID: 2351136420242994421}
   - component: {fileID: 7919823927520665739}
+  - component: {fileID: 842691244375488076}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Untagged
@@ -138,7 +139,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.18, y: 0}
-  m_ConnectedAnchor: {x: 0.35299993, y: 0}
+  m_ConnectedAnchor: {x: 0.35299987, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -161,6 +162,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &842691244375488076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420242994416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420245214648
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +188,8 @@ GameObject:
   - component: {fileID: 2351136420245214653}
   - component: {fileID: 2351136420245214652}
   - component: {fileID: 2637028876540458940}
+  - component: {fileID: 419227357}
+  - component: {fileID: 4982798148280466812}
   m_Layer: 0
   m_Name: Ragdoll
   m_TagString: Untagged
@@ -305,7 +320,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: -0.46}
-  m_ConnectedAnchor: {x: -0.03000021, y: 0.4100001}
+  m_ConnectedAnchor: {x: -0.03, y: 0.41}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -328,6 +343,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &419227357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420245214648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4982798148280466812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420245214648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5499e5294260581409a8f1685cd50568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420249017637
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,6 +381,7 @@ GameObject:
   - component: {fileID: 2351136420249017639}
   - component: {fileID: 2351136420249017642}
   - component: {fileID: 789723618443402499}
+  - component: {fileID: 219365323622704866}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Untagged
@@ -466,7 +506,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.28, y: 0}
-  m_ConnectedAnchor: {x: -0.51100016, y: 0.19000006}
+  m_ConnectedAnchor: {x: -0.511, y: 0.19}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -489,6 +529,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &219365323622704866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420249017637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420359879273
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,6 +555,7 @@ GameObject:
   - component: {fileID: 2351136420359879275}
   - component: {fileID: 2351136420359879278}
   - component: {fileID: 6833762993220915168}
+  - component: {fileID: 9201028483359691082}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -627,7 +680,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.15625, y: 0}
-  m_ConnectedAnchor: {x: -0.23975039, y: 0}
+  m_ConnectedAnchor: {x: -0.23975003, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -650,6 +703,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &9201028483359691082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420359879273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420515033233
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,6 +729,7 @@ GameObject:
   - component: {fileID: 2351136420515033238}
   - component: {fileID: 2351136420515033236}
   - component: {fileID: 5873910465800354120}
+  - component: {fileID: 7512454795793946016}
   m_Layer: 0
   m_Name: Left Leg
   m_TagString: Untagged
@@ -772,7 +838,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.26}
-  m_ConnectedAnchor: {x: 0.21999979, y: -0.23999977}
+  m_ConnectedAnchor: {x: 0.22, y: -0.24000001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -821,6 +887,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7512454795793946016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420515033233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420569806569
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +913,7 @@ GameObject:
   - component: {fileID: 2351136420569806574}
   - component: {fileID: 2351136420569806572}
   - component: {fileID: 149811349965414560}
+  - component: {fileID: 7228259009660269603}
   m_Layer: 0
   m_Name: Right Leg
   m_TagString: Untagged
@@ -943,7 +1022,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.26}
-  m_ConnectedAnchor: {x: -0.22000027, y: -0.23999977}
+  m_ConnectedAnchor: {x: -0.22, y: -0.24000001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -992,6 +1071,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7228259009660269603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420569806569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136420618437424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1163,7 @@ GameObject:
   - component: {fileID: 2351136420994962011}
   - component: {fileID: 2351136420994962014}
   - component: {fileID: 4180765983336657402}
+  - component: {fileID: 8350788785835231350}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -1196,7 +1288,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.15, y: 0}
-  m_ConnectedAnchor: {x: 0.26899981, y: 0}
+  m_ConnectedAnchor: {x: 0.26900005, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1219,6 +1311,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &8350788785835231350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136420994962009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421245549526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1337,7 @@ GameObject:
   - component: {fileID: 2351136421245549531}
   - component: {fileID: 2351136421245549529}
   - component: {fileID: 446597326994802209}
+  - component: {fileID: 7466020391770812673}
   m_Layer: 0
   m_Name: Right Foot
   m_TagString: Untagged
@@ -1390,6 +1495,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7466020391770812673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421245549526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421252919872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1521,7 @@ GameObject:
   - component: {fileID: 2351136421252919877}
   - component: {fileID: 2351136421252919875}
   - component: {fileID: 6678156221070756886}
+  - component: {fileID: 318523965070588974}
   m_Layer: 0
   m_Name: Left Knee
   m_TagString: Untagged
@@ -1512,7 +1630,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.13}
-  m_ConnectedAnchor: {x: 0, y: -0.2999997}
+  m_ConnectedAnchor: {x: 0, y: -0.3000002}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1561,6 +1679,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &318523965070588974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421252919872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421357514892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1738,7 @@ GameObject:
   - component: {fileID: 2351136421499451556}
   - component: {fileID: 2351136421499451559}
   - component: {fileID: 2046224996414521166}
+  - component: {fileID: 1310281060354794085}
   m_Layer: 0
   m_Name: Right Elbow
   m_TagString: Untagged
@@ -1732,7 +1863,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.19, y: 0}
-  m_ConnectedAnchor: {x: -0.34199953, y: 0}
+  m_ConnectedAnchor: {x: -0.34199995, y: 0}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1755,6 +1886,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &1310281060354794085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421499451554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421524437225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1912,7 @@ GameObject:
   - component: {fileID: 2351136421524437230}
   - component: {fileID: 2351136421524437228}
   - component: {fileID: 4495992777068273870}
+  - component: {fileID: 5507825103518452985}
   m_Layer: 0
   m_Name: Right Knee
   m_TagString: Untagged
@@ -1877,7 +2021,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.13}
-  m_ConnectedAnchor: {x: 0, y: -0.2999997}
+  m_ConnectedAnchor: {x: 0, y: -0.3000002}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1926,6 +2070,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &5507825103518452985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421524437225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421706334426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,6 +2127,7 @@ GameObject:
   - component: {fileID: 2351136421720588976}
   - component: {fileID: 2351136421720588979}
   - component: {fileID: 2351136421720588978}
+  - component: {fileID: 8258533320125836133}
   m_Layer: 0
   m_Name: Upper Body
   m_TagString: Untagged
@@ -2090,6 +2247,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.6875}
   m_EdgeRadius: 0
+--- !u!114 &8258533320125836133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421720588943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136421850299996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2104,6 +2273,7 @@ GameObject:
   - component: {fileID: 2351136421850299969}
   - component: {fileID: 2351136421850299999}
   - component: {fileID: 3177309643965292155}
+  - component: {fileID: 3031092997121055922}
   m_Layer: 0
   m_Name: Left Foot
   m_TagString: Untagged
@@ -2212,7 +2382,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.16}
-  m_ConnectedAnchor: {x: 0, y: -0.19000006}
+  m_ConnectedAnchor: {x: 0, y: -0.18999982}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2261,6 +2431,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3031092997121055922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136421850299996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136422025488353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,6 +2457,7 @@ GameObject:
   - component: {fileID: 2351136422025488355}
   - component: {fileID: 2351136422025488358}
   - component: {fileID: 6235484143079927293}
+  - component: {fileID: 4939432453049950354}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Untagged
@@ -2399,7 +2582,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.275, y: 0}
-  m_ConnectedAnchor: {x: 0.49499965, y: 0.19000006}
+  m_ConnectedAnchor: {x: 0.49499997, y: 0.19}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2422,6 +2605,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &4939432453049950354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136422025488353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2351136422071474318
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,6 +2631,7 @@ GameObject:
   - component: {fileID: 2351136422071474355}
   - component: {fileID: 2351136422071474353}
   - component: {fileID: 2492167740594023407}
+  - component: {fileID: 6955809278051550025}
   m_Layer: 0
   m_Name: Lower Body
   m_TagString: Untagged
@@ -2544,7 +2740,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.2}
-  m_ConnectedAnchor: {x: 0, y: -0.40400004}
+  m_ConnectedAnchor: {x: 0, y: -0.40399992}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -2583,3 +2779,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6955809278051550025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351136422071474318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
