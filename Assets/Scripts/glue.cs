@@ -21,16 +21,14 @@ public class glue : MonoBehaviour
 
                 RaycastHit2D hit2D = Physics2D.Raycast(touchPostion, Vector2.zero);
 
-                if(firstObject == null){
+                if(firstObject == null && hit2D.collider.gameObject.tag != "Invincible"){
                     firstObject = hit2D.collider.gameObject;
                 }
-                else if(secondObject == null){
+                else if(secondObject == null && hit2D.collider.gameObject.tag != "Invincible"){
                     secondObject = hit2D.collider.gameObject;
-                }
-                else if(firstObject != null && secondObject != null){
                     FixedJoint2D joint2D = secondObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
                     joint2D.connectedBody = firstObject.GetComponent<Rigidbody2D>();
-                    firstObject = null;
+                    firstObject = secondObject;
                     secondObject = null;
                 }
             }

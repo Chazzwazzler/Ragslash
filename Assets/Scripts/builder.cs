@@ -23,7 +23,13 @@ public class builder : MonoBehaviour
     public bool lockPosition = false;
     public bool alignPosition = false;
 
+    public float strengthModifier;
+    public float bloodDurationModifier;
+    public bool hasBlood = true;
+    public bool hasJoints = true;
+
     void Update() {
+        //place
         if(toolBar.currentToolSelected == toolBar.toolSelected.buildTool){
             GameObject objectUnderMouse = CheckForObjectUnderMouse();
             if(Input.GetMouseButton(0) && objectUnderMouse == null && EventSystem.current.IsPointerOverGameObject() == false){
@@ -100,6 +106,7 @@ public class builder : MonoBehaviour
                 }
             }
 
+            //delete
             if(Input.GetMouseButton(1) && objectUnderMouse != null && objectUnderMouse.tag != "Invincible"){
                 if(objectUnderMouse.transform.root != null){
                     Destroy(objectUnderMouse.transform.root.gameObject);
@@ -109,6 +116,7 @@ public class builder : MonoBehaviour
                 }
             }
         }
+
     }
 
     GameObject CheckForObjectUnderMouse()
@@ -149,5 +157,18 @@ public class builder : MonoBehaviour
     }
     public void toggleAlignment(bool toggle){
         alignPosition = toggle;
+    }
+
+    public void setStrengthModifier(InputField inputField){
+        strengthModifier = float.Parse(inputField.text);
+    }
+    public void setBloodDurationModifier(InputField inputField){
+        bloodDurationModifier = float.Parse(inputField.text);
+    }
+    public void toggleBlood(bool toggle){
+        hasBlood = toggle;
+    }
+    public void toggleJoints(bool toggle){
+        hasJoints = toggle;
     }
 }
