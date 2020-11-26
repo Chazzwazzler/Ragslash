@@ -28,7 +28,8 @@ public class glue : MonoBehaviour
                     secondObject = hit2D.collider.gameObject;
                 }
                 else if(firstObject != null && secondObject != null){
-                    secondObject.transform.SetParent(firstObject.transform);
+                    FixedJoint2D joint2D = secondObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
+                    joint2D.connectedBody = firstObject.GetComponent<Rigidbody2D>();
                     firstObject = null;
                     secondObject = null;
                 }

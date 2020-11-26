@@ -38,15 +38,6 @@ public class builder : MonoBehaviour
                             if(child.gameObject.GetComponent<Rigidbody2D>() != null){
                                 child.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
                             }
-                            else if(child.childCount > 0){
-                                foreach (Transform child2 in child)
-                                {
-                                    if(child2.gameObject.GetComponent<Rigidbody2D>() != null){
-
-                                    }
-                                    child2.gameObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
-                                }
-                            }
                         }
                     }
                     placedObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
@@ -60,14 +51,6 @@ public class builder : MonoBehaviour
                             if(child.gameObject.GetComponent<Rigidbody2D>() != null){
                                 child.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
                             }
-                            else if(child.childCount > 0){
-                                foreach (Transform child2 in child)
-                                {
-                                    if(child2.gameObject.GetComponent<Rigidbody2D>()){
-                                        child2.gameObject.GetComponent<Rigidbody2D>().mass = massScale;
-                                    }
-                                }
-                            }
                         }
                     }
                     placedObject.GetComponent<Rigidbody2D>().mass = massScale;
@@ -80,14 +63,6 @@ public class builder : MonoBehaviour
                         {
                             if(child.gameObject.GetComponent<Collider2D>() != null){
                                 child.gameObject.GetComponent<Collider2D>().isTrigger = true;
-                            }
-                            else if(child.childCount > 0){
-                                foreach (Transform child2 in child)
-                                {
-                                    if(child2.gameObject.GetComponent<Collider2D>() != null){
-                                        child2.gameObject.GetComponent<Collider2D>().isTrigger = true;
-                                    }
-                                }
                             }
                         }
                     }
@@ -117,14 +92,6 @@ public class builder : MonoBehaviour
                         {
                             if(child.gameObject.GetComponent<SpriteRenderer>() != null){
                                 child.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
-                            }
-                            else if(child.childCount > 0){
-                                foreach (Transform child2 in child)
-                                {
-                                    if(child2.gameObject.GetComponent<SpriteRenderer>() != null){
-                                        child2.gameObject.GetComponent<SpriteRenderer>().material.color = placedObjectColor;
-                                    }
-                                }
                             }
                         }
                     }

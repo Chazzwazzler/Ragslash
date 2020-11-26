@@ -9,5 +9,6 @@ public class blood : MonoBehaviour
     {
        GameObject bloodInstantiated = (GameObject)Instantiate(bloodParticleSystem, transform.position, Quaternion.identity);
        bloodInstantiated.transform.parent = gameObject.transform;
+       transform.parent = null;
     }
 }
