@@ -7,11 +7,12 @@ public class drag : MonoBehaviour
     toolBar toolBar;
     private Vector3 screenPoint;
     private Vector3 offset;
-
+    bool isKinematicOriginal;
 
     void Start()
     {
         toolBar = GameObject.Find("Game Controller").GetComponent<toolBar>();
+        isKinematicOriginal = GetComponent<Rigidbody2D>().isKinematic;
     }
 
     void OnMouseDown()
@@ -27,12 +28,12 @@ public class drag : MonoBehaviour
         if(toolBar.currentToolSelected == toolBar.toolSelected.dragTool){
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
             Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
-            if(GetComponent<HingeJoint2D>() != null){
-                GetComponent<HingeJoint2D>().attachedRigidbody.MovePosition(curPosition);
-            }
-            else{
-                GetComponent<Rigidbody2D>().MovePosition(curPosition);
-            }
+            GetComponent<Rigidbody2D>().MovePosition(curPosition);
+            GetComponent<Rigidbody2D>().isKinematic = true;
         }
+    }
+    void OnMouseUp()
+    {
+        GetComponent<Rigidbody2D>().isKinematic = isKinematicOriginal;
     }
 }

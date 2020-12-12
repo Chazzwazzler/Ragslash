@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 6437588588018692634}
   - component: {fileID: 2819365056802342804}
   - component: {fileID: 452220338996582718}
-  - component: {fileID: 6772633409026073}
+  - component: {fileID: 8749043713265055249}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Ragdoll
@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &452220338996582718
@@ -220,18 +221,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6772633409026073
-MonoBehaviour:
+--- !u!331 &8749043713265055249
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588018692637}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 2261789417605955005, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588077334173
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +286,7 @@ GameObject:
   - component: {fileID: 6437588588077334168}
   - component: {fileID: 8926765622444714196}
   - component: {fileID: 2142004700553149527}
-  - component: {fileID: 4714397186301609149}
+  - component: {fileID: 5326726323376758284}
   m_Layer: 0
   m_Name: Right Leg
   m_TagString: Ragdoll
@@ -403,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &2142004700553149527
@@ -417,18 +457,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4714397186301609149
-MonoBehaviour:
+--- !u!331 &5326726323376758284
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588077334173}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8410604519842564561, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588165527781
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +522,7 @@ GameObject:
   - component: {fileID: 6437588588165527776}
   - component: {fileID: 2914480806372340028}
   - component: {fileID: 1276659980866723284}
-  - component: {fileID: 1829192402078111948}
+  - component: {fileID: 1221440804458975035}
   m_Layer: 0
   m_Name: Left Leg
   m_TagString: Ragdoll
@@ -600,6 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &1276659980866723284
@@ -614,18 +693,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1829192402078111948
-MonoBehaviour:
+--- !u!331 &1221440804458975035
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588165527781}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 4991271337638030662, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588431660369
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +758,7 @@ GameObject:
   - component: {fileID: 6437588588431660382}
   - component: {fileID: 8287656696125379959}
   - component: {fileID: 8862333314609917590}
-  - component: {fileID: 2898900860101084926}
+  - component: {fileID: 2968042802298165181}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Ragdoll
@@ -787,6 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &8862333314609917590
@@ -801,18 +919,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2898900860101084926
-MonoBehaviour:
+--- !u!331 &2968042802298165181
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588431660369}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -4884025220836380001, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588435463628
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,8 +984,7 @@ GameObject:
   - component: {fileID: 6437588588435463624}
   - component: {fileID: 6732487140163911624}
   - component: {fileID: 8788214645786816169}
-  - component: {fileID: 174829971288551049}
-  - component: {fileID: 4382132371387184392}
+  - component: {fileID: 2434146638565663499}
   m_Layer: 0
   m_Name: Head
   m_TagString: Ragdoll
@@ -975,6 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &8788214645786816169
@@ -989,30 +1145,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &174829971288551049
-MonoBehaviour:
+--- !u!331 &2434146638565663499
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588435463628}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4382132371387184392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6437588588435463628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5499e5294260581409a8f1685cd50568, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5125522549364131812, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588437699716
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1210,7 @@ GameObject:
   - component: {fileID: 6437588588437699713}
   - component: {fileID: 1449841657225472255}
   - component: {fileID: 8234785259207261752}
-  - component: {fileID: 6547177703658437714}
+  - component: {fileID: 5821732940727552024}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Ragdoll
@@ -1174,6 +1356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &8234785259207261752
@@ -1188,18 +1371,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6547177703658437714
-MonoBehaviour:
+--- !u!331 &5821732940727552024
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588437699716}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5565170809889519630, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588491020845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1436,7 @@ GameObject:
   - component: {fileID: 6437588588491020842}
   - component: {fileID: 4896277192707651982}
   - component: {fileID: 726755747948953602}
-  - component: {fileID: 4778594961799311745}
+  - component: {fileID: 7862097775290101501}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Ragdoll
@@ -1361,6 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &726755747948953602
@@ -1375,18 +1597,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4778594961799311745
-MonoBehaviour:
+--- !u!331 &7862097775290101501
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588491020845}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -260089097500838274, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588588993179862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,7 +1662,7 @@ GameObject:
   - component: {fileID: 6437588588993179859}
   - component: {fileID: 7319374562052880186}
   - component: {fileID: 7771259151298095633}
-  - component: {fileID: 4901930347077885611}
+  - component: {fileID: 3921182107727222501}
   m_Layer: 0
   m_Name: Right Elbow
   m_TagString: Ragdoll
@@ -1548,6 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &7771259151298095633
@@ -1562,18 +1823,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4901930347077885611
-MonoBehaviour:
+--- !u!331 &3921182107727222501
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588588993179862}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 3156583782482711842, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589035171997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,7 +1888,7 @@ GameObject:
   - component: {fileID: 6437588589035171992}
   - component: {fileID: 5157460727021086906}
   - component: {fileID: 3862323864663786637}
-  - component: {fileID: 3971257487521596048}
+  - component: {fileID: 2496520088120520883}
   m_Layer: 0
   m_Name: Right Knee
   m_TagString: Ragdoll
@@ -1745,6 +2044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &3862323864663786637
@@ -1759,18 +2059,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3971257487521596048
-MonoBehaviour:
+--- !u!331 &2496520088120520883
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589035171997}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 1623129238041970614, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589280506786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +2124,7 @@ GameObject:
   - component: {fileID: 6437588589280506797}
   - component: {fileID: 9206663100329414229}
   - component: {fileID: 2191743757587364213}
-  - component: {fileID: 7856265048411574432}
+  - component: {fileID: 6814675225996828656}
   m_Layer: 0
   m_Name: Right Foot
   m_TagString: Ragdoll
@@ -1942,6 +2280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &2191743757587364213
@@ -1956,18 +2295,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7856265048411574432
-MonoBehaviour:
+--- !u!331 &6814675225996828656
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589280506786}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6643495714756105647, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589306821172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +2360,7 @@ GameObject:
   - component: {fileID: 6437588589306821175}
   - component: {fileID: 2691904750848443490}
   - component: {fileID: 9051563944850093146}
-  - component: {fileID: 2755886913267962498}
+  - component: {fileID: 2389747951908224117}
   m_Layer: 0
   m_Name: Left Knee
   m_TagString: Ragdoll
@@ -2139,6 +2516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &9051563944850093146
@@ -2153,18 +2531,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2755886913267962498
-MonoBehaviour:
+--- !u!331 &2389747951908224117
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589306821172}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6571291339187982856, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589540880277
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2596,7 @@ GameObject:
   - component: {fileID: 6437588589540880274}
   - component: {fileID: 3422420578175477129}
   - component: {fileID: 4429959895171393766}
-  - component: {fileID: 3144305056227914387}
+  - component: {fileID: 8514944694853961963}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Ragdoll
@@ -2326,6 +2742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &4429959895171393766
@@ -2340,18 +2757,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3144305056227914387
-MonoBehaviour:
+--- !u!331 &8514944694853961963
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589540880277}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 5801705748012628178, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589729763578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,7 +2822,7 @@ GameObject:
   - component: {fileID: 6437588589729763525}
   - component: {fileID: 6585379706251879323}
   - component: {fileID: 1833524733100935997}
-  - component: {fileID: 2650920506850381423}
+  - component: {fileID: 9009921751643187945}
   m_Layer: 0
   m_Name: Lower Body
   m_TagString: Ragdoll
@@ -2513,6 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &1833524733100935997
@@ -2527,18 +2983,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2650920506850381423
-MonoBehaviour:
+--- !u!331 &9009921751643187945
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589729763578}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -7710346860661196772, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588589912869627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,7 +3046,7 @@ GameObject:
   - component: {fileID: 6437588589912869575}
   - component: {fileID: 6437588589912869574}
   - component: {fileID: 822530235284923153}
-  - component: {fileID: 3037936423729325661}
+  - component: {fileID: 1949248182913258559}
   m_Layer: 0
   m_Name: Upper Body
   m_TagString: Ragdoll
@@ -2684,18 +3178,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3037936423729325661
-MonoBehaviour:
+--- !u!331 &1949248182913258559
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588589912869627}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6647710922757234133, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &6437588590017934888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,7 +3243,7 @@ GameObject:
   - component: {fileID: 6437588590017934891}
   - component: {fileID: 6191905100144285199}
   - component: {fileID: 6045688522032927942}
-  - component: {fileID: 8320167558819396084}
+  - component: {fileID: 6567220841402551640}
   m_Layer: 0
   m_Name: Left Foot
   m_TagString: Ragdoll
@@ -2867,6 +3399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
 --- !u!114 &6045688522032927942
@@ -2881,15 +3414,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8320167558819396084
-MonoBehaviour:
+--- !u!331 &6567220841402551640
+SpriteMask:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6437588590017934888}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f965933d96ce152458d665c441ebc452, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10758, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 6595010433682487284, guid: 4f9d725d0b7dd424c9411596bc5192c3,
+    type: 3}
+  m_MaskAlphaCutoff: 0.2
+  m_FrontSortingLayerID: 0
+  m_BackSortingLayerID: 0
+  m_FrontSortingLayer: 0
+  m_BackSortingLayer: 0
+  m_FrontSortingOrder: 0
+  m_BackSortingOrder: 0
+  m_IsCustomRangeActive: 0
+  m_SpriteSortPoint: 0

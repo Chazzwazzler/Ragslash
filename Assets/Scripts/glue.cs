@@ -16,6 +16,10 @@ public class glue : MonoBehaviour
     void Update()
     {
         if(toolBar.currentToolSelected == toolBar.toolSelected.glueTool){
+            if(Input.GetKeyDown(KeyCode.Return)){
+                firstObject = null;
+                secondObject = null;
+            }
             if(Input.GetMouseButtonDown(0)){
                 Vector2 touchPostion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -28,6 +32,9 @@ public class glue : MonoBehaviour
                     secondObject = hit2D.collider.gameObject;
                     FixedJoint2D joint2D = secondObject.AddComponent(typeof(FixedJoint2D)) as FixedJoint2D;
                     joint2D.connectedBody = firstObject.GetComponent<Rigidbody2D>();
+                    joint2D.dampingRatio = 1;
+                    joint2D.frequency = 0;
+                    joint2D.enableCollision = true;
                     firstObject = secondObject;
                     secondObject = null;
                 }
