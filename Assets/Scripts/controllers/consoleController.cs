@@ -18,6 +18,10 @@ public class consoleController : MonoBehaviour
 
     //stuff needed for console commands
     public GameObject BOB;
+    public GameObject catBoy;
+    public GameObject governmentAgent;
+    public GameObject littleMike;
+    public GameObject purpleGuy;
     public builder Builder;
 
     void Update()
@@ -98,7 +102,26 @@ public class consoleController : MonoBehaviour
                 }
             }
         }
-
+        //OWO - Spawns catboy
+        if(command == "OWO"){
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(catBoy, mousePos, Quaternion.identity);
+        }
+        //CIA - Spawns government agent
+        if(command == "CIA"){
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(governmentAgent, mousePos, Quaternion.identity);
+        }
+        //Smol - Spawns little mike
+        if(command == "Smol"){
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(littleMike, mousePos, Quaternion.identity);
+        }
+        //The man behind the slaughter
+        if(command == "The man behind the slaughter"){
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(purpleGuy, mousePos, Quaternion.identity);
+        }
         currentCommand = null;
     }
 }

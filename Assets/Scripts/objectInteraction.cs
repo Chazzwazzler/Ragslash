@@ -15,7 +15,7 @@ public class objectInteraction : MonoBehaviour
     private BoxCollider worldCollider;
     private RectTransform rt; 
     private bool isSelecting;
-    public List<GameObject> selectedObjects;
+    public Collider2D[] currentlySelectedObjects;
     
 
     void Start()
@@ -55,9 +55,9 @@ public class objectInteraction : MonoBehaviour
             //We finished our selection box when the key is released
             if (Input.GetMouseButtonUp(0))
             {
-                Collider2D[] selectedColliders = Physics2D.OverlapBoxAll(rt.position, new Vector2(rt.rect.width/100, rt.rect.height/100), 0);  
+                Collider2D[] selectedColliders = Physics2D.OverlapBoxAll(rt.transform.TransformPoint(rt.transform.position), new Vector2(rt.transform.localScale.x, rt.transform.localScale.y), 0);  
                 for(int i = 0; i < selectedColliders.Length; i++){
-                    selectedObjects.Add(selectedColliders[i].gameObject);
+                   selectedColliders[i].isTrigger = true;
                 }
                 isSelecting = false;
             }
