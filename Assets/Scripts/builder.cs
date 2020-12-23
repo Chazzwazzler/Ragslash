@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using UnityEngine.UI;
 
 public class builder : MonoBehaviour
@@ -6,33 +7,40 @@ public class builder : MonoBehaviour
     public toolBar toolBar;
     public GameObject chosenObject;
 
-    //settings
-    public ColorPicker picker;
+    //Custom Sprite
+    public bool usesCustomSprite;
+    public Sprite customSprite;
 
+    //Components
+    public bool hasAppearanceComponent = true;
+    public bool hasPhysicsComponent = true;
+    public bool hasCollisionComponent = true;
+    public bool hasAlignmentComponent = false;
+    public bool hasLayerComponent = false;
 
-    //rigidbody 2d
-    public float gravityScale = 1;
-    public float massScale = 1;
-    public bool lockPosition = false;
+    //Transform Component
+    public float sizeX = 1.0f;
+    public float sizeY = 1.0f;
+    public float rotation = 0f;
 
-    //collider 2d
-    public bool hasCollision = true;
+    //Appearance Component
+    public Color customColor;
+    public ColorPicker colorPicker;
 
-    //transform
-    public float xScale = 1;
-    public float yScale = 1;
-    public float rotationAmount = 0;
-    public bool alignPosition = false;
+    //Physics Component
+    public float massScale = 1.0f;
+    public float gravityScale = 1.0f;
 
-    //hinge joint 2d
-    public float strengthModifier;
+    //Layer Component
+    public int layer;
+
+    //Ragdol Component
+    public float bloodDurationModifier = 1f;
+    public bool hasBlood = true;
     public bool hasJoints = true;
 
-    //blood
-    public float bloodDurationModifier;
-    public bool hasBlood = true;
-
     void Update() {
+        customColor = colorPicker.CurrentColor;
         if(toolBar.currentToolSelected == toolBar.toolSelected.buildTool){        
             //checks if the mouse is not over the UI
             if(gameUtilities.MouseOverUIObject != true){
@@ -44,76 +52,88 @@ public class builder : MonoBehaviour
                         if(objectUnderMouse == null){
                             Vector2 mousePos = gameUtilities.MouseWorldPos;
                             GameObject placedObject = (GameObject)Instantiate(chosenObject, mousePos, Quaternion.identity);
-
-                            //modify the components of children//
-
-                            //rigidbody 2d
-                            if(placedObject.transform.childCount > 0){
-                                Rigidbody2D[] childrenRb = placedObject.GetComponentsInChildren<Rigidbody2D>();
-                                for (int rbIndex = 0; rbIndex < childrenRb.Length; rbIndex++)
-                                {
-                                    childrenRb[rbIndex].gravityScale = gravityScale;
-                                    childrenRb[rbIndex].mass = massScale;
-                                    childrenRb[rbIndex].isKinematic = lockPosition;
-                                }
-                            }
-                            placedObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
-                            placedObject.GetComponent<Rigidbody2D>().mass = massScale;
-                            placedObject.GetComponent<Rigidbody2D>().isKinematic = lockPosition;
                             
-                            //collider 2d
-                            if(placedObject.transform.childCount > 0){
-                                Collider2D[] childrenCol = placedObject.GetComponentsInChildren<Collider2D>();
-                                for (int colIndex = 0; colIndex < childrenCol.Length; colIndex++)
-                                {
-                                    childrenCol[colIndex].isTrigger = hasCollision;
+                            //appearance component
+                            if(!hasAppearanceComponent){
+                                if(placedObject.GetComponent<SpriteRenderer>() != null){
+                                    Destroy(placedObject.GetComponent<SpriteRenderer>());
+                                }
+                                SpriteRenderer[] renderers = placedObject.GetComponentsInChildren<SpriteRenderer>();
+                                for(int i = 0; i < renderers.Length; i++){
+                                    Destroy(renderers[i]);
                                 }
                             }
-                            placedObject.GetComponent<Collider2D>().isTrigger = !hasCollision;
-
-                            //transform
-                            if(placedObject.transform.childCount > 0){
-                                Transform[] childrenTransform = placedObject.GetComponentsInChildren<Transform>();
-                                for (int transformIndex = 0; transformIndex < childrenTransform.Length; transformIndex++)
-                                {
-                                    childrenTransform[transformIndex].localScale = new Vector3(xScale, yScale, 0);
-                                    childrenTransform[transformIndex].eulerAngles = new Vector3(0,0,rotationAmount);
-                                }
+                            if(placedObject.GetComponent<SpriteRenderer>() != null){
+                                placedObject.GetComponent<SpriteRenderer>().material.color = customColor;
                             }
-                            placedObject.transform.position = new Vector3(Mathf.Round(placedObject.transform.position.x), Mathf.Round(placedObject.transform.position.y), 0);
-
-                            //hinge joint 2d
-                            if(placedObject.GetComponent<HingeJoint2D>()!=null || placedObject.GetComponentsInChildren<HingeJoint2D>() != null){
-                                HingeJoint2D[] childrenHinge = placedObject.GetComponentsInChildren<HingeJoint2D>();
-                                for (int hingeIndex = 0; hingeIndex < childrenHinge.Length; hingeIndex++)
-                                {
-                                    childrenHinge[hingeIndex].breakForce += (100 * strengthModifier);
-                                    if(hasJoints == false){
-                                        Destroy(childrenHinge[hingeIndex]);
-                                    }
-                                }
-                                if(placedObject.GetComponent<HingeJoint2D>()!= null){
-                                    placedObject.GetComponent<HingeJoint2D>().breakForce += (100 * strengthModifier);
-                                    if(hasJoints == false){
-                                        Destroy(placedObject.GetComponent<HingeJoint2D>());
-                                    }
-                                }
+                            SpriteRenderer[] rendererColors = placedObject.GetComponentsInChildren<SpriteRenderer>();
+                            for(int i = 0; i < rendererColors.Length; i++){
+                                rendererColors[i].material.color = customColor;
                             }
 
-                            //blood
-                            if(placedObject.GetComponent<blood>() != null || placedObject.GetComponentsInChildren<blood>() != null){
-                                blood[] childrenBlood = placedObject.GetComponentsInChildren<blood>();
-                                for(int bloodIndex = 0; bloodIndex < childrenBlood.Length; bloodIndex++){
-                                    childrenBlood[bloodIndex].bloodDurationModifier = bloodDurationModifier;
-                                    if(hasBlood == false){
-                                        Destroy(childrenBlood[bloodIndex]);
-                                    }
+                            //physics component
+                            if(placedObject.GetComponent<Rigidbody2D>() != null){
+                                placedObject.GetComponent<Rigidbody2D>().isKinematic = !hasPhysicsComponent;
+                                placedObject.GetComponent<Rigidbody2D>().gravityScale = gravityScale;
+                                placedObject.GetComponent<Rigidbody2D>().mass = massScale;
+                            }
+                            Rigidbody2D[] physicsActives = placedObject.GetComponentsInChildren<Rigidbody2D>();
+                            for(int i = 0; i < physicsActives.Length; i++){
+                                physicsActives[i].isKinematic = !hasPhysicsComponent;
+                                physicsActives[i].gravityScale = gravityScale;
+                                physicsActives[i].mass = massScale;
+                            }
+
+                            //collision component
+                            if(placedObject.GetComponent<Collider2D>() != null){
+                                placedObject.GetComponent<Collider2D>().isTrigger = !hasCollisionComponent;
+                            }
+                            Collider2D[] colliderActives = placedObject.GetComponentsInChildren<Collider2D>();
+                            for(int i = 0; i < colliderActives.Length; i++){
+                                colliderActives[i].isTrigger = !hasCollisionComponent;
+                            }
+
+                            //alignment component
+                            if(hasAlignmentComponent){
+                                placedObject.transform.position = new Vector2((float)Math.Round(placedObject.transform.position.x),(float)Math.Round(placedObject.transform.position.y));
+                            }
+
+                            //transform component
+                            placedObject.transform.localScale = new Vector2(sizeX, sizeY);
+                            placedObject.transform.rotation = Quaternion.Euler(0,0,rotation);
+
+                            //layer component
+                            if(hasLayerComponent){
+                                placedObject.GetComponent<SpriteRenderer>().sortingOrder = layer;
+                                SpriteRenderer[] renderers = placedObject.GetComponentsInChildren<SpriteRenderer>();
+                                for(int i = 0; i < renderers.Length; i++){
+                                    renderers[i].sortingOrder = layer;
                                 }
-                                if(placedObject.GetComponent<blood>() != null){
-                                    placedObject.GetComponent<blood>().bloodDurationModifier = bloodDurationModifier;
-                                    if(hasBlood == false){
-                                        Destroy(placedObject.GetComponent<blood>());
-                                    }
+                            }
+
+                            //custom sprite
+                            if(usesCustomSprite){
+                                placedObject.GetComponent<SpriteRenderer>().sprite = customSprite;
+                                Destroy(placedObject.GetComponent<PolygonCollider2D>());
+
+                                if(hasCollisionComponent){
+                                    placedObject.AddComponent(typeof(PolygonCollider2D));
+                                }
+                            }
+
+                            //ragdoll
+                            blood[] bloodComponents = placedObject.GetComponentsInChildren<blood>();
+                            for(int i = 0; i < bloodComponents.Length; i++){
+                                bloodComponents[i].bloodDurationModifier = bloodDurationModifier;
+                                if(!hasBlood){
+                                    Destroy(bloodComponents[i]);
+                                }
+                            }
+                            
+                            if(!hasJoints){
+                                HingeJoint2D[] hingeComponents = placedObject.GetComponentsInChildren<HingeJoint2D>();
+                                for(int i = 0; i < hingeComponents.Length; i++){
+                                    Destroy(hingeComponents[i]);
                                 }
                             }
                         }
@@ -146,43 +166,63 @@ public class builder : MonoBehaviour
         chosenObject = objectToChangeTo;
     }
 
-    //settings 
-    public void setMass(InputField inputField){
-        massScale = float.Parse(inputField.text);
+    //has components
+    public void HasAppearanceComponent(bool hasComponent){
+        hasAppearanceComponent = hasComponent;
     }
-    public void setGravityModifier(InputField inputField){
-        gravityScale = float.Parse(inputField.text);
+    public void HasPhysicsComponent(bool hasComponent){
+        hasPhysicsComponent = hasComponent;
     }
-    public void toggleCollision(bool toggle){
-        hasCollision = toggle;
+    public void HasCollisionComponent(bool hasComponent){
+        hasCollisionComponent = hasComponent;
     }
-    
-    public void setXScale(InputField inputField){
-        xScale = float.Parse(inputField.text);
+    public void HasAlignmentComponent(bool hasComponent){
+        hasAlignmentComponent = hasComponent;
     }
-    public void setYScale(InputField inputField){
-        yScale = float.Parse(inputField.text);
-    }
-    public void setRotationAmount(InputField inputField){
-        rotationAmount = float.Parse(inputField.text);
-    }
-    public void togglePositionLock(bool toggle){
-        lockPosition = toggle;
-    }
-    public void toggleAlignment(bool toggle){
-        alignPosition = toggle;
+    public void HasLayerComponent(bool hasComponent){
+        hasLayerComponent = hasComponent;
     }
 
-    public void setStrengthModifier(InputField inputField){
-        strengthModifier = float.Parse(inputField.text);
+    //physics component
+    public void changeMassScale(InputField input){
+        massScale = float.Parse(input.text);
     }
-    public void setBloodDurationModifier(InputField inputField){
-        bloodDurationModifier = float.Parse(inputField.text);
+    public void changeGravityScale(InputField input){
+        gravityScale = float.Parse(input.text);
     }
-    public void toggleBlood(bool toggle){
+
+    //transform component
+    public void changeXSize(InputField input){
+        sizeX = float.Parse(input.text);
+    }
+    public void changeYSize(InputField input){
+        sizeY = float.Parse(input.text);
+    }
+    public void changeRotation(InputField input){
+        rotation = float.Parse(input.text);
+    }
+
+    //layer component
+    public void changeLayer(InputField input){
+        layer = int.Parse(input.text);
+    }
+
+    //ragdoll component
+    public void changeHasBlood(Toggle toggle){
         hasBlood = toggle;
     }
-    public void toggleJoints(bool toggle){
+    public void changeHasJoints(Toggle toggle){
         hasJoints = toggle;
+    }
+    public void changeBloodDurationModifier(InputField input){
+        bloodDurationModifier = float.Parse(input.text);
+    }
+
+    //custom sprite
+    public void UsesCustomSprite(bool useSprite){
+        usesCustomSprite = useSprite;
+    }
+    public void ChangeCustomSprite(Sprite changedCustomSprite){
+        customSprite = changedCustomSprite;
     }
 }

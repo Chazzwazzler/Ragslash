@@ -15,23 +15,24 @@ public class toolBar : MonoBehaviour
     }
     public toolSelected currentToolSelected = toolSelected.buildTool;
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha1)){
+            currentToolSelected = toolSelected.buildTool;
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha2)){
+            currentToolSelected = toolSelected.dragTool;
+        }
+        if(Input.GetKeyDown(KeyCode.Alpha3)){
+            currentToolSelected = toolSelected.glueTool;
+        }
+    }
+
     public void selectDragTool(){
         currentToolSelected = toolSelected.dragTool;
     }
     public void selectBuildTool(){
         currentToolSelected = toolSelected.buildTool;
-    }
-    public void selectRotateTool(){
-        currentToolSelected = toolSelected.rotateTool;
-    }
-    public void selectScaleTool(){
-        currentToolSelected = toolSelected.scaleTool;
-    }
-    public void selectSelectTool(){
-        currentToolSelected = toolSelected.selectTool;
-    }
-    public void selectSelectionBoxTool(){
-        currentToolSelected = toolSelected.selectionBoxTool;
     }
     public void selectGlueTool(){
         currentToolSelected = toolSelected.glueTool;

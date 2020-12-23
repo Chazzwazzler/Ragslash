@@ -14,9 +14,10 @@ public class cameraController : MonoBehaviour
         float scrollInput = Input.GetAxisRaw("Mouse ScrollWheel") * speed;
         ZoomOrthoCamera(mainCamera.ScreenToWorldPoint(Input.mousePosition), scrollInput);
 
-        if(mainCamera.orthographicSize < 0.1f){
-            mainCamera.orthographicSize = 0.1f;
+        if(mainCamera.orthographicSize < 3f){
+            mainCamera.orthographicSize = 3f;
         }
+
     }
 
     void ZoomOrthoCamera(Vector3 zoomTowards, float amount)
