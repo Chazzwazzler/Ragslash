@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 8475706824594869377}
   - component: {fileID: 4357554632097264909}
   - component: {fileID: 6590763089576418290}
+  - component: {fileID: 2315690441156483456}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Ragdoll
@@ -221,6 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &6590763089576418290
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -271,6 +274,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2315690441156483456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781088396668706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781088738938346
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +304,7 @@ GameObject:
   - component: {fileID: 2170313371608351795}
   - component: {fileID: 2871971806443464923}
   - component: {fileID: 2783151630475508276}
+  - component: {fileID: 348928148616067434}
   m_Layer: 0
   m_Name: Left Leg
   m_TagString: Ragdoll
@@ -457,6 +475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &2783151630475508276
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -507,6 +527,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &348928148616067434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781088738938346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781088810290066
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +557,7 @@ GameObject:
   - component: {fileID: 5588666217990135259}
   - component: {fileID: 3158498557222488408}
   - component: {fileID: 9187489506522262275}
+  - component: {fileID: 7355522131094025706}
   m_Layer: 0
   m_Name: Right Leg
   m_TagString: Ragdoll
@@ -693,6 +728,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &9187489506522262275
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -743,6 +780,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7355522131094025706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781088810290066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781088885704466
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,6 +810,7 @@ GameObject:
   - component: {fileID: 1246571093035135643}
   - component: {fileID: 3470670411054869553}
   - component: {fileID: 5694248391815217950}
+  - component: {fileID: 4467869842632796393}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Ragdoll
@@ -919,6 +971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &5694248391815217950
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -969,6 +1023,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4467869842632796393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781088885704466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089003637131
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +1053,7 @@ GameObject:
   - component: {fileID: 2482062936395718128}
   - component: {fileID: 4912026181266606903}
   - component: {fileID: 7396638036474920215}
+  - component: {fileID: 5876786844330131175}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Ragdoll
@@ -1145,6 +1214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &7396638036474920215
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1195,6 +1266,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5876786844330131175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089003637131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089005873347
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1296,7 @@ GameObject:
   - component: {fileID: 7710806030051019463}
   - component: {fileID: 5736129010647784358}
   - component: {fileID: 1705460327238440452}
+  - component: {fileID: 3121439586138511035}
   m_Layer: 0
   m_Name: Head
   m_TagString: Ragdoll
@@ -1371,6 +1457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &1705460327238440452
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1421,6 +1509,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3121439586138511035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089005873347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089009147998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1539,7 @@ GameObject:
   - component: {fileID: 5003353517319757944}
   - component: {fileID: 5517337703568661401}
   - component: {fileID: 2259764045099328178}
+  - component: {fileID: 7510435444467456368}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Ragdoll
@@ -1597,6 +1700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &2259764045099328178
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1647,6 +1752,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7510435444467456368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089009147998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089254483445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1782,7 @@ GameObject:
   - component: {fileID: 7858543488488363668}
   - component: {fileID: 3394919579852783154}
   - component: {fileID: 5432885146686234598}
+  - component: {fileID: 6774236382333151864}
   m_Layer: 0
   m_Name: Lower Body
   m_TagString: Ragdoll
@@ -1822,6 +1942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &5432885146686234598
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1872,6 +1994,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6774236382333151864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089254483445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089443371674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +2024,7 @@ GameObject:
   - component: {fileID: 1806560531064656006}
   - component: {fileID: 799020962225954281}
   - component: {fileID: 4631944850204622308}
+  - component: {fileID: 2560344577617321083}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Ragdoll
@@ -2047,6 +2184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &4631944850204622308
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2097,6 +2236,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2560344577617321083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089443371674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089553515303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,6 +2266,7 @@ GameObject:
   - component: {fileID: 7170505456530285312}
   - component: {fileID: 7316741860277789129}
   - component: {fileID: 7876695515145713751}
+  - component: {fileID: 5924588051714250088}
   m_Layer: 0
   m_Name: Left Foot
   m_TagString: Ragdoll
@@ -2283,6 +2437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &7876695515145713751
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2333,6 +2489,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5924588051714250088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089553515303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089675886580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2517,7 @@ GameObject:
   - component: {fileID: 8014781089675886537}
   - component: {fileID: 4397455786508703262}
   - component: {fileID: 3270122112318546224}
+  - component: {fileID: 5461399837364379313}
   m_Layer: 0
   m_Name: Upper Body
   m_TagString: Ragdoll
@@ -2478,6 +2649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &3270122112318546224
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2528,6 +2701,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5461399837364379313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089675886580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781089974355417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2731,7 @@ GameObject:
   - component: {fileID: 6052684222039736885}
   - component: {fileID: 6752548815961267998}
   - component: {fileID: 1695460549567466}
+  - component: {fileID: 9124056213266538388}
   m_Layer: 0
   m_Name: Right Elbow
   m_TagString: Ragdoll
@@ -2704,6 +2892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &1695460549567466
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2754,6 +2944,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9124056213266538388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781089974355417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781090016773522
 GameObject:
   m_ObjectHideFlags: 0
@@ -2770,6 +2974,7 @@ GameObject:
   - component: {fileID: 8214050520145714613}
   - component: {fileID: 285252135329198466}
   - component: {fileID: 1497934587596604860}
+  - component: {fileID: 8408071405371306483}
   m_Layer: 0
   m_Name: Right Knee
   m_TagString: Ragdoll
@@ -2940,6 +3145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &1497934587596604860
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -2990,6 +3197,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8408071405371306483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781090016773522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781090282000187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,6 +3227,7 @@ GameObject:
   - component: {fileID: 1384647166038471021}
   - component: {fileID: 5472239867028996437}
   - component: {fileID: 1677246993183771002}
+  - component: {fileID: 1549491484096770155}
   m_Layer: 0
   m_Name: Left Knee
   m_TagString: Ragdoll
@@ -3176,6 +3398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &1677246993183771002
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3226,6 +3450,20 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1549491484096770155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781090282000187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &8014781090291467949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,6 +3480,7 @@ GameObject:
   - component: {fileID: 5307618701878475610}
   - component: {fileID: 2884119110526422138}
   - component: {fileID: 7565562875973561087}
+  - component: {fileID: 8990654161546856520}
   m_Layer: 0
   m_Name: Right Foot
   m_TagString: Ragdoll
@@ -3412,6 +3651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!331 &7565562875973561087
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -3462,3 +3703,17 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8990654161546856520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8014781090291467949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5

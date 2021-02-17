@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7440463221860480829}
   - component: {fileID: 7440463221860480828}
   - component: {fileID: 7440463221860480819}
+  - component: {fileID: 4439127444383051363}
   m_Layer: 0
   m_Name: Left Foot 2
   m_TagString: Untagged
@@ -169,8 +170,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &4439127444383051363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463221860480817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463221960024478
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +201,7 @@ GameObject:
   - component: {fileID: 7440463221960024474}
   - component: {fileID: 7440463221960024473}
   - component: {fileID: 7440463221960024472}
+  - component: {fileID: 3186709630665968401}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Untagged
@@ -330,8 +347,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3186709630665968401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463221960024478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463221977576024
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +378,7 @@ GameObject:
   - component: {fileID: 7440463221977576036}
   - component: {fileID: 7440463221977576027}
   - component: {fileID: 7440463221977576026}
+  - component: {fileID: 7626367141164472891}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Untagged
@@ -491,8 +524,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7626367141164472891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463221977576024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222051330045
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +555,7 @@ GameObject:
   - component: {fileID: 7440463222051330041}
   - component: {fileID: 7440463222051330040}
   - component: {fileID: 7440463222051330047}
+  - component: {fileID: 8512324770273779208}
   m_Layer: 0
   m_Name: Right Leg
   m_TagString: Untagged
@@ -662,8 +711,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &8512324770273779208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222051330045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222154483275
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +742,7 @@ GameObject:
   - component: {fileID: 7440463222154483287}
   - component: {fileID: 7440463222154483286}
   - component: {fileID: 7440463222154483285}
+  - component: {fileID: 8684317868226334567}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -823,8 +888,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &8684317868226334567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222154483275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222165066305
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +919,7 @@ GameObject:
   - component: {fileID: 7440463222165066317}
   - component: {fileID: 7440463222165066316}
   - component: {fileID: 7440463222165066307}
+  - component: {fileID: 1759677583675663434}
   m_Layer: 0
   m_Name: Right Elbow
   m_TagString: Untagged
@@ -984,8 +1065,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &1759677583675663434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222165066305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222217880979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1132,7 @@ GameObject:
   - component: {fileID: 7440463222235958948}
   - component: {fileID: 7440463222235958939}
   - component: {fileID: 7440463222235958938}
+  - component: {fileID: 9052201601416621504}
   m_Layer: 0
   m_Name: Right Foot
   m_TagString: Untagged
@@ -1191,8 +1288,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &9052201601416621504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222235958936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222262851331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1319,7 @@ GameObject:
   - component: {fileID: 7440463222262851343}
   - component: {fileID: 7440463222262851342}
   - component: {fileID: 7440463222262851341}
+  - component: {fileID: 5128875137123779364}
   m_Layer: 0
   m_Name: Right Leg 2
   m_TagString: Untagged
@@ -1362,8 +1475,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &5128875137123779364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222262851331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222290270759
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,6 +1506,7 @@ GameObject:
   - component: {fileID: 7440463222290270755}
   - component: {fileID: 7440463222290270754}
   - component: {fileID: 7440463222290270753}
+  - component: {fileID: 407276722980434356}
   m_Layer: 0
   m_Name: Left Knee 2
   m_TagString: Untagged
@@ -1533,8 +1662,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &407276722980434356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222290270759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222365499051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,6 +1693,7 @@ GameObject:
   - component: {fileID: 7440463222365499062}
   - component: {fileID: 7440463222365499061}
   - component: {fileID: 7440463222365499060}
+  - component: {fileID: 3649081491048728839}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Untagged
@@ -1701,8 +1846,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3649081491048728839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222365499051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222436900584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,6 +1913,7 @@ GameObject:
   - component: {fileID: 7440463222561704815}
   - component: {fileID: 7440463222561704814}
   - component: {fileID: 7440463222561704813}
+  - component: {fileID: 6378363794792901622}
   m_Layer: 0
   m_Name: Left Knee
   m_TagString: Untagged
@@ -1908,8 +2069,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6378363794792901622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222561704803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222577523403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,6 +2100,7 @@ GameObject:
   - component: {fileID: 7440463222577523415}
   - component: {fileID: 7440463222577523414}
   - component: {fileID: 7440463222577523413}
+  - component: {fileID: 6740040477426511073}
   m_Layer: 0
   m_Name: Left Foot
   m_TagString: Untagged
@@ -2079,8 +2256,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6740040477426511073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222577523403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222613643472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2287,7 @@ GameObject:
   - component: {fileID: 7440463222613643484}
   - component: {fileID: 7440463222613643475}
   - component: {fileID: 7440463222613643474}
+  - component: {fileID: 171804088560050290}
   m_Layer: 0
   m_Name: Right Knee
   m_TagString: Untagged
@@ -2250,8 +2443,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &171804088560050290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222613643472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222636899138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,6 +2474,7 @@ GameObject:
   - component: {fileID: 7440463222636899150}
   - component: {fileID: 7440463222636899149}
   - component: {fileID: 7440463222636899148}
+  - component: {fileID: 3028293011553288815}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -2411,8 +2620,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3028293011553288815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222636899138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222741714248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2651,7 @@ GameObject:
   - component: {fileID: 7440463222741714260}
   - component: {fileID: 7440463222741714251}
   - component: {fileID: 7440463222741714250}
+  - component: {fileID: 8027369733723164844}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Untagged
@@ -2572,8 +2797,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &8027369733723164844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222741714248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222763596300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,6 +2828,7 @@ GameObject:
   - component: {fileID: 7440463222763596296}
   - component: {fileID: 7440463222763596303}
   - component: {fileID: 7440463222763596302}
+  - component: {fileID: 9140767562189914217}
   m_Layer: 0
   m_Name: Left Arm
   m_TagString: Untagged
@@ -2733,8 +2974,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &9140767562189914217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222763596300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222772664391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,6 +3005,7 @@ GameObject:
   - component: {fileID: 7440463222772664387}
   - component: {fileID: 7440463222772664386}
   - component: {fileID: 7440463222772664385}
+  - component: {fileID: 6969992714909760712}
   m_Layer: 0
   m_Name: Left Leg 2
   m_TagString: Untagged
@@ -2904,8 +3161,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6969992714909760712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222772664391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222792574927
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,6 +3190,7 @@ GameObject:
   - component: {fileID: 7440463222792574922}
   - component: {fileID: 7440463222792574920}
   - component: {fileID: 7440463222792574921}
+  - component: {fileID: 2449208686798045531}
   m_Layer: 0
   m_Name: Upper Body
   m_TagString: Untagged
@@ -3037,6 +3310,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8125, y: 0.6875}
   m_EdgeRadius: 0
+--- !u!114 &2449208686798045531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222792574927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222804167398
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3338,7 @@ GameObject:
   - component: {fileID: 7440463222804167394}
   - component: {fileID: 7440463222804167393}
   - component: {fileID: 7440463222804167392}
+  - component: {fileID: 4593524823508888618}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Untagged
@@ -3196,8 +3484,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &4593524823508888618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222804167398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222814110649
 GameObject:
   m_ObjectHideFlags: 0
@@ -3212,6 +3515,7 @@ GameObject:
   - component: {fileID: 7440463222814110533}
   - component: {fileID: 7440463222814110532}
   - component: {fileID: 7440463222814110651}
+  - component: {fileID: 6770230900934610490}
   m_Layer: 0
   m_Name: Right Elbow
   m_TagString: Untagged
@@ -3357,8 +3661,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6770230900934610490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222814110649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222842522523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,6 +3728,7 @@ GameObject:
   - component: {fileID: 7440463222966638287}
   - component: {fileID: 7440463222966638286}
   - component: {fileID: 7440463222966638285}
+  - component: {fileID: 2208373644824717772}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: Untagged
@@ -3554,8 +3874,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &2208373644824717772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222966638275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222986150116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,6 +3905,7 @@ GameObject:
   - component: {fileID: 7440463222986150112}
   - component: {fileID: 7440463222986150119}
   - component: {fileID: 7440463222986150118}
+  - component: {fileID: 3652189746780064882}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -3715,8 +4051,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3652189746780064882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463222986150116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463222992902990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,6 +4115,7 @@ GameObject:
   - component: {fileID: 7440463223049967881}
   - component: {fileID: 7440463223049967880}
   - component: {fileID: 7440463223049967887}
+  - component: {fileID: 6575190290471058779}
   m_Layer: 0
   m_Name: Right Foot 2
   m_TagString: Untagged
@@ -3919,8 +4271,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6575190290471058779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223049967885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223207676202
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,6 +4302,7 @@ GameObject:
   - component: {fileID: 7440463223207676214}
   - component: {fileID: 7440463223207676213}
   - component: {fileID: 7440463223207676212}
+  - component: {fileID: 3034396332113780982}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: Untagged
@@ -4080,8 +4448,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3034396332113780982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223207676202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223212202877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,6 +4479,7 @@ GameObject:
   - component: {fileID: 7440463223212202873}
   - component: {fileID: 7440463223212202872}
   - component: {fileID: 7440463223212202879}
+  - component: {fileID: 7462132787594192359}
   m_Layer: 0
   m_Name: Right Knee 2
   m_TagString: Untagged
@@ -4251,8 +4635,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7462132787594192359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223212202877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223331220028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,6 +4666,7 @@ GameObject:
   - component: {fileID: 7440463223331220024}
   - component: {fileID: 7440463223331220031}
   - component: {fileID: 7440463223331220030}
+  - component: {fileID: 3384288510858120168}
   m_Layer: 0
   m_Name: Lower Body
   m_TagString: Untagged
@@ -4412,8 +4812,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &3384288510858120168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223331220028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223364265315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4464,6 +4879,7 @@ GameObject:
   - component: {fileID: 7440463223392183818}
   - component: {fileID: 7440463223392183817}
   - component: {fileID: 7440463223392183816}
+  - component: {fileID: 6793296083207015357}
   m_Layer: 0
   m_Name: Right Arm
   m_TagString: Untagged
@@ -4609,8 +5025,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &6793296083207015357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223392183822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223393525330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,6 +5056,7 @@ GameObject:
   - component: {fileID: 7440463223393525342}
   - component: {fileID: 7440463223393525341}
   - component: {fileID: 7440463223393525340}
+  - component: {fileID: 1283898865854570290}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Untagged
@@ -4770,8 +5202,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &1283898865854570290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223393525330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223523409706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4786,6 +5233,7 @@ GameObject:
   - component: {fileID: 7440463223523409718}
   - component: {fileID: 7440463223523409717}
   - component: {fileID: 7440463223523409716}
+  - component: {fileID: 7850680331786800726}
   m_Layer: 0
   m_Name: Left Elbow
   m_TagString: Untagged
@@ -4931,8 +5379,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7850680331786800726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223523409706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
 --- !u!1 &7440463223848102672
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,6 +5410,7 @@ GameObject:
   - component: {fileID: 7440463223848102684}
   - component: {fileID: 7440463223848102675}
   - component: {fileID: 7440463223848102674}
+  - component: {fileID: 7088228362532438600}
   m_Layer: 0
   m_Name: Left Leg
   m_TagString: Untagged
@@ -5102,5 +5566,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727a569efbe840541ab465ba9eebce11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bloodDurationModifier: 0
   bloodParticleSystem: {fileID: 3553843740367094232, guid: b717d3cb313a8f340818de487d613cd9,
     type: 3}
+--- !u!114 &7088228362532438600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7440463223848102672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7c38f69afa23a46a438e96bd0ed66b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  speed: 5
