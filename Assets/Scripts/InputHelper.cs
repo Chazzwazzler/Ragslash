@@ -29,6 +29,14 @@ public static class InputHelper
         }
 	}
 
+	public static GameObject GetObjectAtPosition2D(Vector3 position) {
+		var hit = Physics2D.GetRayIntersection (new Ray (new Vector3 (position.x, position.y, -100), Vector3.forward), float.MaxValue);
+		if (hit.collider) {
+			return hit.collider.gameObject;
+		}
+		return null;
+	}
+
     public static bool MouseOverUIObject {
 		get{
 		return UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject ();

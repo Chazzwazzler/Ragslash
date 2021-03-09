@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 265119992803036622}
   - component: {fileID: 6949944049529937349}
   - component: {fileID: -6698178887261499712}
+  - component: {fileID: -7282748225719842599}
+  - component: {fileID: 6590065519889058283}
   m_Layer: 0
   m_Name: Death Block
   m_TagString: Untagged
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df9b9ed96ff7f1145a82f107f792f04a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63f79ce152b6c154ab1b690cb5fd23f4, type: 3}
   m_Color: {r: 0.5372549, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4828,7 +4830,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4957,3 +4958,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ff1fcab7d2db144ac8d79abe5f6f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7282748225719842599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382801793903216000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6df173e6f31d6f4d80cec204f4161ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalRigidbodyState: 0
+  currentRigidbodyState: 0
+--- !u!114 &6590065519889058283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382801793903216000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77f495fbf67c21449fb10e4d225e82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasAppearanceComponent: 1
+  hasPhysicsComponent: 1
+  hasCollisionComponent: 1
+  sizeX: 1
+  sizeY: 1
+  rotation: 0
+  alignOnPlacement: 0
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  massScale: 1
+  gravityScale: 1

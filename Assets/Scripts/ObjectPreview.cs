@@ -21,6 +21,12 @@ public class ObjectPreview : MonoBehaviour
         else{
             spriteRenderer.sprite = null;
         }
-        transform.position = new Vector2(InputHelper.MouseWorldPos.x, InputHelper.MouseWorldPos.y);
+        transform.localScale = new Vector2(ComponentSystemValues.self.sizeX, ComponentSystemValues.self.sizeY);
+        if(ComponentSystemValues.self.alignOnPlacement){
+            transform.position = buildTool.CalculateClosest(InputHelper.MouseWorldPos);
+        }
+        else{
+            transform.position = InputHelper.MouseWorldPos;
+        }
     }
 }

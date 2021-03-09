@@ -14,7 +14,8 @@ public class NoiseUponImpact : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(!source.isPlaying){
-            source.volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 40);
+            float averageOfScale = (transform.localScale.x + transform.localScale.y) /2;
+            source.volume = Mathf.Clamp01(collision.relativeVelocity.magnitude / 40 * averageOfScale);
             source.Play();
         }
     }

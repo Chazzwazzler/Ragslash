@@ -8,10 +8,6 @@ using UnityEditor;
 
 public sealed class PixelCollider2D : MonoBehaviour
 {
-    void Start()
-    {
-        Regenerate();
-    }
     [Range(0, 1)]
     public float alphaCutoff = 0.5f;
     public void Regenerate()

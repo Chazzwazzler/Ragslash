@@ -15,9 +15,11 @@ GameObject:
   - component: {fileID: 1393601574939364378}
   - component: {fileID: 1369865792}
   - component: {fileID: 8490831925173016750}
-  - component: {fileID: 600489770221376446}
   - component: {fileID: 43783688791241239}
   - component: {fileID: 192524712894052574}
+  - component: {fileID: -5014478031655176392}
+  - component: {fileID: 6461198833433020242}
+  - component: {fileID: -1797852342430961448}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -79,12 +81,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 63f79ce152b6c154ab1b690cb5fd23f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7a06fd45e8c66a4990a07a4d5ccb1f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -108,7 +110,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -173,23 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00ff1fcab7d2db144ac8d79abe5f6f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &600489770221376446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8827706184738368897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: 
-  prefabName: Square
-  id: 
-  idParent: 
-  dontSave: 0
 --- !u!114 &43783688791241239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,3 +283,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5014478031655176392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827706184738368897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6df173e6f31d6f4d80cec204f4161ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalRigidbodyState: 0
+  currentRigidbodyState: 0
+--- !u!114 &6461198833433020242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827706184738368897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77f495fbf67c21449fb10e4d225e82d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasAppearanceComponent: 1
+  hasPhysicsComponent: 1
+  hasCollisionComponent: 1
+  sizeX: 1
+  sizeY: 1
+  rotation: 0
+  alignOnPlacement: 0
+  customColor: {r: 0, g: 0, b: 0, a: 0}
+  massScale: 1
+  gravityScale: 1
+--- !u!114 &-1797852342430961448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8827706184738368897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveChildren: 0
